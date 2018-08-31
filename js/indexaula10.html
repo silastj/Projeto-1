@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Aula 10 </title>
+	    <meta charset="utf-8">
+	    <meta id="viewport" name="viewport" content="width=device-width,user-scalable=no">
+	    <style>
+	    	.zebrada{background: silver;}
+	    </style>
+  </head>
+        <body>
+        	<table class="zebra">
+        		<thead>
+        			<tr>
+        				<th>Nome</th>
+        				<th>Fone</th>
+        			</tr>
+        		</thead>
+        		       <tbody>
+        		       	<tr>
+        		       		<th>Silas</th>
+        		       		<th>00xx00 00000-0000</th>
+        		       	</tr>
+        				<tr>
+        		       		<th>Samara</th>
+        		       		<th>00xx00 00000-0000</th>
+        		       	</tr>
+        		       	<tr>
+        		       		<th>Sebastião</th>
+        		       		<th>00xx00 00000-0000</th>
+        		       	</tr>
+        		       	<tr>
+        		       		<th>Ivonete</th>
+        		       		<th>00xx00 00000-0000</th>
+        		       	</tr>
+        		       	<tr>
+        		       		<th>Rita</th>
+        		       		<th>00xx00 00000-0000</th>
+        		       	</tr>
+        		       	<tr>
+        		       		<th>Patricia</th>
+        		       		<th>00xx00 00000-0000</th>
+        		       	</tr>
+
+    		
+        			    </tbody>	
+        	   </table>
+          <script>
+          	// ele executa o codigo quando a janela for carregada
+	              window.onload=function(){
+                     var zebrar = document.querySelectorAll('.zebra tbody tr');
+                     for (var i=0; i<zebrar.length; i+=2){
+                     	zebrar[i] .className ='zebrada';
+                     }
+                  }
+               
+
+
+
+
+
+
+
+          </script>
+        </body>
+</html>
