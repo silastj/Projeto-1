@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace HTML_Ecommerce_Store1.HTML_Ecommerce_Store.Modules
+{
+    public partial class NewProducts : System.Web.UI.UserControl
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            GetProducts();
+        }
+
+        private void GetProducts()
+        {
+            List<zbBusinessLayer.Product> product = new List<zbBusinessLayer.Product>();
+            zbBusinessLayer.Product item = new zbBusinessLayer.Product();
+
+            for (int iI = 1; iI <= 4; iI++)
+            {
+                item = new zbBusinessLayer.Product();
+                item.Name = "Nulla At Nulla Justo";
+                item.Description = "";
+                item.Price = 999.99;
+                item.ImagePath = "http://placehold.it/300x300";
+                product.Add(item);
+            }
+
+            dlCatalog.DataSource = product;
+            dlCatalog.DataBind();
+        }
+    }
+}

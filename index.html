@@ -6,22 +6,26 @@
 	  <meta id="viewport" name="viewport" content="width=device-width,user-scalable=no">
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
 	  <script type="text/javascript" src="js/script.js"></script>
+	  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-png"/> 
 	  
    </head>
    <body>
          <div class="topo"> 
+			  
             <div class="topoint">
                 <div class="topoleft">
                 	<ul>
                 		<li> <a href="./" class="ativo">Menu</a></li>
-						<li> <a href="quemsomos">Quem Somos</a></li>
-						<li> <a href="anuncieaqui">Anuncie Aqui</a></li>
-						<li> <a href="contatos">Contato</a></li>
+						<li> <a href="./">Quem Somos</a></li>
+						<li> <a href="./">Anuncie Aqui</a></li>
+						<li> <a href="./">Contato</a></li>
                 	</ul>                	
                 </div>
             	<div class="toporight">
+                      <form action="http://www.google.com/search" method="GET" target="_blank">
             		<input type="image" src="imagens/busca.png" border="0" width="26" height="26"/>
-            		<input type="text" name="busca" class="topobusca" placeholder="Busca..."/>
+            		<input type="text" name="q" class="topobusca" autofocus placeholder="Busca..."/>
+                      </form>
             		    <a href="paginas/flexbox.html"> <img src="imagens/facebook.png" border="0" width="26px" height="26px"></a>
                     <a href="paginas/flexbox.html"> <img src="imagens/instagram.png" border="0" width="26px" height="26px"></a>
                     <a href="paginas/flexbox.html"> <img src="imagens/google.png" border="0" width="26" height="26"></a>
@@ -42,48 +46,47 @@
           	 <div class="menuint">
 				   <img src="imagens/menumobile2.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()"/>
           	 	 <ul id="menu"> <!--id="menu" criado id para usar no java script style="display:none"por padrao	-->
-          	 	 	<li> <a href="paginas/flexbox.html" class="ativo">Home </a></li>
-          	 		<li> <a href="paginas/flexbox.html">Economia</a></li>
-                 <li> <a href="./">Geral </a></li>
-                  <li> <a href="paginas/flexbox.html">Policia </a></li>
-                    <li> <a href="paginas/flexbox.html">Videos</a></li>
+          	 	 	<li> <a href="paginas/flexbox.html" class="ativo" id="home-1">Home </a></li>
+          	 		<li> <a href="paginas/flexbox.html" id="home-1">Economia</a></li>
+                 <li> <a href="./" id="home-1">Geral </a></li>
+                  <li> <a href="paginas/flexbox.html" id="home-1">Policia </a></li>
+                    <li> <a href="paginas/flexbox.html" id="home-1">Videos</a></li>
 
                     <li> 
                     	<a href="">Trabalhos</a>   
                     	<img src="imagens/seta.png" border="0" width="10">                    
                         <div class="submenu">
-                        	<a href="paginas/flexbox.html" > <div class="submenuitem">Cidauto Store</div></a>
-                        	<a href="paginas/flexbox.html" > <div class="submenuitem">Menu Lateral</div></a>
-                          <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 3</div></a>
-                          <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 4</div></a>
-                          <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 5</div></a>
+                        	<a href="cidautostore.html" > <div class="submenuitem">Cidauto Store</div></a>
+                        	<a href="menu.html" > <div class="submenuitem">Menu Lateral</div></a>
+                          <a href="fashion.html" > <div class="submenuitem">Fashion</div></a>
+                          <a href="jogo.html" > <div class="submenuitem">Jogo Balões</div></a>
 
                         </div>
                       </li>  
                     
 
                     <li> 
-                    	<a href="./">Esportes</a>  
+                    	<a href="./" id="home-1">Esportes</a>  
                     	<img src="imagens/seta.png" border="0" width="10">                  	
                         <div class="submenu">
-                        	<a href="paginas/flexbox.html" ><div class="submenuitem">Submenu 1</div></a>
-                        	<a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 2</div></a>
-                            <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 3</div></a>
-                            <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 4</div></a>
+                        	<a href="cidautostore.html" id="home-1"><div class="submenuitem">Submenu 1</div></a>
+                        	<a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 2</div></a>
+                            <a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 3</div></a>
+                            <a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 4</div></a>
                             
                         </div>
                       </li>  
                    
 
                     <li> 
-                    	<a href="paginas/flexbox.html">Noticias</a>
+                    	<a href="paginas/flexbox.html" id="home-1">Noticias</a>
                     	<img src="imagens/seta.png" border="0" width="10">
                         <div class="submenu">
-                        	<a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 1</div></a>
-                        	<a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 2</div></a>
-                            <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 3</div></a>
-                            <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 4</div></a>
-                            <a href="paginas/flexbox.html" > <div class="submenuitem">Submenu 5</div></a>
+                        	<a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 1</div></a>
+                        	<a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 2</div></a>
+                            <a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 3</div></a>
+                            <a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 4</div></a>
+                            <a href="cidautostore.html" id="home-1"> <div class="submenuitem">Submenu 5</div></a>
                         </div>
                       </li>
 
@@ -167,7 +170,7 @@
 																	<div class="noticiaimg">
 																		<img src="imagens/banner2.png"border="0"width="384"height="222"/>
 																	</div>
-																	   <div class="noticiatitulo">Qualquer coisa no momentoQualquer coisa no momentoQualquer coisa no </div>
+																	   <div class="noticiatitulo">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos... </div>
 																	<div class="noticiainfo"> 500 Comentarios Facebook</div>       
    
 															   </div>  
@@ -179,7 +182,7 @@
 																 <div class="noticiaimg">
 																	 <img src="imagens/desbloquear.png"border="0"width="80"height="80"/>
 																 </div>
-																    <div class="noticiatitulo">Qualquer coisa no momento</div>
+																    <div class="noticiatitulo">Lorem Ipsum é simplesmente</div>
 																    <div class="noticiainfo"> 500 Comentarios Facebook</div>       
 																   </a>
 															</div>       
@@ -188,7 +191,7 @@
 																	<div class="noticiaimg">
 																		<img src="imagens/codepen.png"border="0"width="80"height="80"/>
 																	</div>
-																	   <div class="noticiatitulo">Qualquer coisa no momento</div>
+																	   <div class="noticiatitulo">Lorem Ipsum é simplesmente</div>
 																	<div class="noticiainfo"> 500 Comentarios Facebook</div>       
 																    </a>                                                                     
 															   </div>       
@@ -197,7 +200,7 @@
 																	<div class="noticiaimg">
 																		<img src="imagens/feliz.png"border="0"width="80"height="80"/>
 																	</div>
-																	   <div class="noticiatitulo">Qualquer coisa no momento</div>
+																	   <div class="noticiatitulo">Lorem Ipsum é simplesmente</div>
 																	<div class="noticiainfo"> 500 Comentarios Facebook</div>       
 																      </a>
 															   </div>
@@ -229,7 +232,7 @@
 																	   <div class="noticiaimg">
 																		   <img src="imagens/banner4.jpg"border="0"width="384"height="222"/>
 																	   </div>
-																		  <div class="noticiatitulo">Qualquer coisa no momentoQualquer coisa no momentoQualquer coisa no </div>
+																		  <div class="noticiatitulo">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos...</div>
 																	   <div class="noticiainfo"> 500 Comentarios Facebook</div>       
 	  
 																  </div>  
@@ -241,7 +244,7 @@
 																	<div class="noticiaimg">
 																		<img src="imagens/midia.png"border="0"width="80"height="80"/>
 																	</div>
-																	   <div class="noticiatitulo">Qualquer coisa no momento</div>
+																	   <div class="noticiatitulo">Lorem Ipsum é simplesmente</div>
 																	   <div class="noticiainfo"> 500 Comentarios Facebook</div>       
 																  </a>
 															   </div>       
@@ -250,7 +253,7 @@
 																	   <div class="noticiaimg">
 																		   <img src="imagens/codepen.png"border="0"width="80"height="80"/>
 																	   </div>
-																		  <div class="noticiatitulo">Qualquer coisa no momento</div>
+																		  <div class="noticiatitulo">Lorem Ipsum é simplesmente</div>
 																	   <div class="noticiainfo"> 500 Comentarios Facebook</div>       
 	                                                                      </a>
 																  </div>       
@@ -259,7 +262,7 @@
 																	   <div class="noticiaimg">
 																		   <img src="imagens/fechamento.png"border="0"width="80"height="80"/>
 																	   </div>
-																		  <div class="noticiatitulo">Qualquer coisa no momento</div>
+																		  <div class="noticiatitulo">Lorem Ipsum é simplesmente</div>
 																	   <div class="noticiainfo"> 500 Comentarios Facebook</div>       
 	                                                                       </a>
 																  </div>
@@ -288,18 +291,18 @@
                                      	<div class="widget_conteudo">
                                      		<a href="https://github.com/silastj" target="_blank"> <img src="imagens/github.png" title="github" border="0" width="26px" height="26px"></a>
                                         <a href="https://www.linkedin.com/in/am%C3%B3s-silas-santos-17760b82/" target="_blank"> <img src="imagens/linkedin.png" title="linkedIn" border="0" width="26" height="26"></a>
-
+										<a href="pdf/cv.pdf" target="_blank"><img src="imagens/anexo.png" title="Currículo" border="0" width="25" height="25"></a>
                                      	</div>	
                                      </div>
                                      	    <div class="widget">
-                                     	<div class="widget_titulo">ÚLTIMAS NOTÍCIAS
+                                     	<div class="widget_titulo">HISTÓRIA
                                      	</div>
                                      	<div class="widget_conteudo">
-                                     		<div class="noticia2"> <a href="paginas/flexbox.html" target="open">Cursos Html-Css3-JavaScript-PHP-AngularJS-Node-JS Escola: B7Web Cursando.</a>               </div>
-                                     		<div class="noticia2"><a href="paginas/flexbox.html" target="open">Cursos Html-Css3-JavaScript-PHP-AngularJS-Node-JS Escola: B7Web Cursando.</a>               </div>
-                                     		<div class="noticia2"><a href="paginas/flexbox.html" target="open">Cursos Html-Css3-JavaScript-PHP-AngularJS-Node-JS Escola: B7Web Cursando.</a>               </div>
-                                     		<div class="noticia2"><a href="paginas/flexbox.html" target="open">Cursos Html-Css3-JavaScript-PHP-AngularJS-Node-JS Escola: B7Web Cursando.</a>               </div>
-                                     		<div class="noticia2"><a href="paginas/flexbox.html" target="open">Cursos Html-Css3-JavaScript-PHP-AngularJS-Node-JS Escola: B7Web Cursando.</a>               </div>
+                                     		<div class="noticia2"> <a href="paginas/flexbox.html" target="open"><strong>Html-Html5</strong><br/>Ano 1970 <br/>HyperText Markup Language <br/>Linguagem de marcação de hipertexto<br/>Tim Berners-Lee</a>               </div>
+                                     		<div class="noticia2"><a href="paginas/flexbox.html" target="open"><strong>Css-Css3</strong><br/>Ano 1994 <br/>Cascading Syle Sheets <br/>Folha de Estilo em Cascatas<br/>BertBos </a>               </div>
+											 <div class="noticia2"><a href="paginas/flexbox.html" target="open"><strong>LiveScript – JavaScript</strong><br/>Ano 1995 <br/>Padronizada pela ECMA International<br/>(associação especializada na padronização de sistemas de informação)<br/>Brenda Eich </a>               </div> 
+											 <div class="noticia2"><a href="paginas/flexbox.html" target="open"><strong>PHP</strong><br/>Ano 1994 <br/>Personal Home Page <br/>Home page pessoaL<br/>Rasmus Lerdorf </a>               </div>
+                                     		<div class="noticia2"><a href="paginas/flexbox.html" target="open"><strong>Cursos</strong><br/> Html5<br/>Css3<br/>JavaScript<br/>PHP<br/>AngularJS<br/>NodeJS<br/>React Native<br/> Escola: B7Web, Udemy, Rbtech, Capital Code </a>               </div>
                                      	</div>
                                              </div>
                                             <div class="widget">

@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="HTML_Ecommerce_Store1.HTML_Ecommerce_Store.Layout" %>
+
+<%@ Register Src="~/Modules/Footer.ascx" TagPrefix="js" TagName="Footer" %>
+<%@ Register Src="~/Modules/TopMenu.ascx" TagPrefix="js" TagName="TopMenu" %>
+<%@ Register Src="~/Modules/Header.ascx" TagPrefix="js" TagName="Header" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta content="IE=11.0000" http-equiv="X-UA-Compatible" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourStore</title>
+
+    <link href="css/foundation.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <js:TopMenu runat="server" id="TopMenu" />
+        <js:Header runat="server" ID="Header" />
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <js:Footer runat="server" id="Footer" />
+    </form>
+
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/foundation.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-582634634337a811"></script>
+    
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

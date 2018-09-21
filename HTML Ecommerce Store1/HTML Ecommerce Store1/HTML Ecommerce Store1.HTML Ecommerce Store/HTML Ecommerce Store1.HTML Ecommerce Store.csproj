@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8BAD50B7-2737-448F-8FC2-9FCB37E2715D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTML_Ecommerce_Store1.HTML_Ecommerce_Store</RootNamespace>
+    <AssemblyName>HTML Ecommerce Store1.HTML Ecommerce Store</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administration\CSS\admin.css" />
+    <Content Include="Administration\default.aspx" />
+    <Content Include="Administration\Javascript\admin.js" />
+    <Content Include="Administration\Modules\CallOutLargeValue.ascx" />
+    <Content Include="Administration\Modules\CallOutStat.ascx" />
+    <Content Include="Administration\Modules\ChartCard.ascx" />
+    <Content Include="Administration\Modules\OffCanvas.ascx" />
+    <Content Include="Administration\Modules\TablePendingOrders.ascx" />
+    <Content Include="Administration\Modules\TableSalesByProduct.ascx" />
+    <Content Include="Administration\Modules\TopBar.ascx" />
+    <Content Include="checkout.aspx" />
+    <Content Include="contactus.aspx" />
+    <Content Include="CSS\app.css" />
+    <Content Include="CSS\font-awesome\css\font-awesome.css" />
+    <Content Include="CSS\font-awesome\css\font-awesome.min.css" />
+    <Content Include="CSS\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="CSS\foundation.min.css" />
+    <Content Include="default.aspx" />
+    <Content Include="images\logo.png" />
+    <Content Include="javascript\foundation.js" />
+    <Content Include="javascript\foundation.min.js" />
+    <Content Include="javascript\jquery.js" />
+    <Content Include="javascript\what-input.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Modules\AllProducts.ascx" />
+    <Content Include="Modules\BannerTop.ascx" />
+    <Content Include="Modules\Breadcrumbs.ascx" />
+    <Content Include="Modules\BuyNow.ascx" />
+    <Content Include="Modules\Cards.ascx" />
+    <Content Include="Modules\Checkout.ascx" />
+    <Content Include="Modules\CustomerLogin.ascx" />
+    <Content Include="Modules\CustomerRegister.ascx" />
+    <Content Include="Modules\FeaturedProducts.ascx" />
+    <Content Include="Modules\Footer.ascx" />
+    <Content Include="Modules\Header.ascx" />
+    <Content Include="Modules\HeroSlider.ascx" />
+    <Content Include="Modules\InputQuantity.ascx" />
+    <Content Include="Modules\NewProducts.ascx" />
+    <Content Include="Modules\ProductCardMini1.ascx" />
+    <Content Include="Modules\ProductCardMini2.ascx" />
+    <Content Include="Modules\ProductReview.ascx" />
+    <Content Include="Modules\ProductView.ascx" />
+    <Content Include="Modules\SimilarProducts.ascx" />
+    <Content Include="Modules\TopMenu.ascx" />
+    <Content Include="Modules\TopProducts.ascx" />
+    <Content Include="Modules\YourBasket.ascx" />
+    <Content Include="products.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="shoppingcart.aspx" />
+    <Content Include="view.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\CallOutLargeValue.ascx.cs">
+      <DependentUpon>CallOutLargeValue.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\CallOutLargeValue.ascx.designer.cs">
+      <DependentUpon>CallOutLargeValue.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\CallOutStat.ascx.cs">
+      <DependentUpon>CallOutStat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\CallOutStat.ascx.designer.cs">
+      <DependentUpon>CallOutStat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\ChartCard.ascx.cs">
+      <DependentUpon>ChartCard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\ChartCard.ascx.designer.cs">
+      <DependentUpon>ChartCard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\OffCanvas.ascx.cs">
+      <DependentUpon>OffCanvas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\OffCanvas.ascx.designer.cs">
+      <DependentUpon>OffCanvas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\TablePendingOrders.ascx.cs">
+      <DependentUpon>TablePendingOrders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\TablePendingOrders.ascx.designer.cs">
+      <DependentUpon>TablePendingOrders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\TableSalesByProduct.ascx.cs">
+      <DependentUpon>TableSalesByProduct.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\TableSalesByProduct.ascx.designer.cs">
+      <DependentUpon>TableSalesByProduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Modules\TopBar.ascx.cs">
+      <DependentUpon>TopBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\TopBar.ascx.designer.cs">
+      <DependentUpon>TopBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AllProducts.ascx.cs">
+      <DependentUpon>AllProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\AllProducts.ascx.designer.cs">
+      <DependentUpon>AllProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BannerTop.ascx.cs">
+      <DependentUpon>BannerTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\BannerTop.ascx.designer.cs">
+      <DependentUpon>BannerTop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Breadcrumbs.ascx.cs">
+      <DependentUpon>Breadcrumbs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Breadcrumbs.ascx.designer.cs">
+      <DependentUpon>Breadcrumbs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BuyNow.ascx.cs">
+      <DependentUpon>BuyNow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\BuyNow.ascx.designer.cs">
+      <DependentUpon>BuyNow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Cards.ascx.cs">
+      <DependentUpon>Cards.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Cards.ascx.designer.cs">
+      <DependentUpon>Cards.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Checkout.ascx.cs">
+      <DependentUpon>Checkout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Checkout.ascx.designer.cs">
+      <DependentUpon>Checkout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomerLogin.ascx.cs">
+      <DependentUpon>CustomerLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomerLogin.ascx.designer.cs">
+      <DependentUpon>CustomerLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomerRegister.ascx.cs">
+      <DependentUpon>CustomerRegister.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomerRegister.ascx.designer.cs">
+      <DependentUpon>CustomerRegister.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FeaturedProducts.ascx.cs">
+      <DependentUpon>FeaturedProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\FeaturedProducts.ascx.designer.cs">
+      <DependentUpon>FeaturedProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HeroSlider.ascx.cs">
+      <DependentUpon>HeroSlider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\HeroSlider.ascx.designer.cs">
+      <DependentUpon>HeroSlider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\InputQuantity.ascx.cs">
+      <DependentUpon>InputQuantity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\InputQuantity.ascx.designer.cs">
+      <DependentUpon>InputQuantity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NewProducts.ascx.cs">
+      <DependentUpon>NewProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\NewProducts.ascx.designer.cs">
+      <DependentUpon>NewProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductCardMini1.ascx.cs">
+      <DependentUpon>ProductCardMini1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductCardMini1.ascx.designer.cs">
+      <DependentUpon>ProductCardMini1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductCardMini2.ascx.cs">
+      <DependentUpon>ProductCardMini2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductCardMini2.ascx.designer.cs">
+      <DependentUpon>ProductCardMini2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductReview.ascx.cs">
+      <DependentUpon>ProductReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductReview.ascx.designer.cs">
+      <DependentUpon>ProductReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductView.ascx.cs">
+      <DependentUpon>ProductView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductView.ascx.designer.cs">
+      <DependentUpon>ProductView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SimilarProducts.ascx.cs">
+      <DependentUpon>SimilarProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\SimilarProducts.ascx.designer.cs">
+      <DependentUpon>SimilarProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TopProducts.ascx.cs">
+      <DependentUpon>TopProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TopProducts.ascx.designer.cs">
+      <DependentUpon>TopProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\YourBasket.ascx.cs">
+      <DependentUpon>YourBasket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\YourBasket.ascx.designer.cs">
+      <DependentUpon>YourBasket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shoppingcart.aspx.cs">
+      <DependentUpon>shoppingcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shoppingcart.aspx.designer.cs">
+      <DependentUpon>shoppingcart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view.aspx.cs">
+      <DependentUpon>view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view.aspx.designer.cs">
+      <DependentUpon>view.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Layout.Master" />
+    <Content Include="CSS\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="CSS\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CSS\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="CSS\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="CSS\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Administration\admin.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\zbBusinessLayer\zbBusinessLayer.csproj">
+      <Project>{2c87359a-6937-4c8c-bd3c-fa8c4d479088}</Project>
+      <Name>zbBusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50072</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50072/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
